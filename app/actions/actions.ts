@@ -1,6 +1,6 @@
 "use server"
 
-import { supabase } from "../../aapp/db/seed.disabled"
+import { supabase } from "../../aapp/db/seed"
 
 export async function getProducts() {
   const { data, error } = await supabase.from("products").select("*")
